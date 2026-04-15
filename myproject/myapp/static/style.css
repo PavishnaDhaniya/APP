@@ -1,0 +1,51 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background: linear-gradient(to right, #87ceeb, #e0f7fa);
+}
+
+h1 {
+    margin-top: 20px;
+    color: #01579b;
+}
+
+#puzzle-container {
+    width: 300px;
+    height: 300px;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 3px;
+}
+
+.tile {
+    width: 100px;
+    height: 100px;
+    background-image: url('https://picsum.photos/300');
+    background-size: 300px 300px;
+    cursor: pointer;
+    border: 1px solid #fff;
+    transition: transform 0.2s ease;
+}
+
+.tile:hover {
+    transform: scale(1.05);
+}
+
+.tile.selected {
+    border: 2px solid red;
+}
+
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    background: #0288d1;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #01579b;
+}

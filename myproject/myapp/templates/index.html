@@ -1,0 +1,25 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AeroPuzzle ✈️</title>
+
+    <!-- Link CSS -->
+    <link rel="stylesheet" href="{% static 'style.css' %}">
+</head>
+<body>
+
+    <h1>AeroPuzzle ✈️</h1>
+    <p>Click two tiles to swap and solve the puzzle!</p>
+
+    <div id="puzzle-container"></div>
+
+    <button onclick="shuffleTiles()">Shuffle</button>
+
+    <!-- Link JS -->
+    <script src="{% static 'Pavi.js' %}"></script>
+
+</body>
+</html>
